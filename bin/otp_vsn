@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+ERL=`which erl`
+if [ ! $ERL = "" ]; then
+    VSN=`$ERL -noshell -eval 'Vsn = erlang:system_info(otp_release), io:format("~p", [Vsn]).' -s init stop`
+    echo $VSN
+else
+    echo "Erlang not installed :("
+fi
