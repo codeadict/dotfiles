@@ -6,12 +6,15 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "heroku/brew"
+tap 'thoughtbot/formulae'
 
 # Bins
 brew "awscli"
 brew "bash" # Latest Bash version
 brew "bash-completion"
+brew "ccat"
 brew "clang-format"
+brew "colordiff"
 brew "coreutils" # The ones that come with macOS are outdated
 brew "cmus"
 brew "ctags"
@@ -37,6 +40,8 @@ brew "pkg-config"
 brew "plantuml"
 brew "pstree"
 brew "pwgen"
+brew "rcm"
+brew "ripgrep"
 brew "s3cmd"
 brew "shellcheck"
 brew "ssh-copy-id", link: true

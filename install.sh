@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+set -euo pipefail
 
 function coloured() {
     printf "\033[00;$1m==> $2\033[0m\n"
@@ -12,13 +13,19 @@ function success() {
     coloured "32", "$1"
 }
 
-function warning() {
+function warn() {
     coloured "33", "$1"
 }
 
 function info() {
     coloured "34", "$1"
 }
+
+DOTFILES=~/.dotfiles
+if [ -d $DOTFILES ]; then
+  error "$DOTFILES already exists! Aborting."
+  exit 1
+fi
 
 info "Starting the Mac install ..."
 
@@ -30,10 +37,9 @@ if ! command -v brew >/dev/null; then
     info "Installing Homebrew..."
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew tap homebrew/bundle
+    info "Updating Homebrew formulaes..."
+    brew update
 fi
-
-info "Updating Homebrew formulaes..."
-brew update
 
 if ! command -v git >/dev/null; then
   info "Installing Git..."
@@ -42,8 +48,20 @@ if ! command -v git >/dev/null; then
   git config --global user.email "dairon.medina@gmail.com"
 fi
 
+# Clone the dotfiles
+git clone https://github.com/codeadict/dotfiles.git $DOTFILES
+cd $DOTFILES
+
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle
+
+# Symlink dotfiles
+rcup -v rcrc
+rcup -v
+
+# Install ASDF version manager
+cd "$HOME"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 info "Starting Homebrew cleanup..."
 brew cask cleanup
