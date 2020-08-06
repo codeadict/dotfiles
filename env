@@ -1,0 +1,63 @@
+# utf-8 locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# 256 colors (fixes Vim colors inside Tmux)
+export TERM="xterm-256color"
+
+# highlight grep results
+export GREP_COLOR="1;31"
+
+# Case-Insensitive matches in autojump
+export AUTOJUMP_IGNORE_CASE=1
+
+# Erlang/Elixir shell history
+export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+
+# ---------
+# Aliases
+# ---------
+ 
+# Colored ls output
+alias ls='ls -G'
+# Colored cat meow
+alias cat="ccat"
+
+# Common helpers to save fingers
+alias ..='cd ..'
+alias ...='cd ...'
+alias ll='ls -laF'
+alias la='ls -a'
+alias df='df -h'
+alias du='du -c -h'
+alias mkdr='mkdir -p -v'
+
+# Git aliases
+alias gs='git status'
+alias gl='git log --decorate --graph'
+alias ga='git add'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gp='git push'
+alias gitflow='git commit -a && git push'
+alias gb='git branch'
+alias gnb=' git checkout -b'
+alias gch='git checkout'
+# Git colordiff
+gcd_fn() {
+    param=$(echo "$1")
+    git difftool -y -x "colordiff -y -W $COLUMNS" $param | less -R;
+}
+alias gcd=gcd_fn
+
+# Long running command notification by voice
+pingme_fn() {
+    "$@" && say "Yoo, command finished successfully" || say  "Mehhh, command finished with exit status $?"
+}
+alias pingme=pingme_fn
+
+# Utility to clear ssh known hosts
+ssh-clear() {
+    sed -i '' "/$1/d" $HOME/.ssh/known_hosts
+}
+alias clearkh=ssh-clear
