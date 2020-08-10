@@ -67,6 +67,19 @@ info "Starting Homebrew cleanup..."
 brew cask cleanup
 brew cleanup
 
+# Install and use ZSH
+ZSH=/usr/local/bin/zsh
+if grep -vFxq $ZSH /etc/shells
+then
+  info "Adding $ZSH to /etc/shells"
+  echo $ZSH | sudo tee -a /etc/shells
+fi
+sudo chmod -R 755 /usr/local/share/zsh
+chsh -s $ZSH
+env zsh
+# shellcheck source=./zshrc
+. ~/.zshrc
+
 info "Generating an SSH key for Git..."
 ssh-keygen -t rsa
 info "Please add this public key to Github \n"
