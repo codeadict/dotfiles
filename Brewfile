@@ -7,8 +7,10 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "heroku/brew"
 tap 'thoughtbot/formulae'
+tap "d12frosted/emacs-plus"
 
 # Bins
+brew "aspell"
 brew "awscli"
 brew "bash" # Latest Bash version
 brew "bash-completion"
@@ -18,8 +20,10 @@ brew "colordiff"
 brew "coreutils" # The ones that come with macOS are outdated
 brew "cmus"
 brew "ctags"
+brew "curl"
 brew "direnv"
 brew "editorconfig"
+brew "emacs-plus@28", args: ["with-jansson", "with-dbus"]
 brew "fd"
 brew "findutils"
 brew "git"
@@ -57,7 +61,7 @@ cask "1password"
 brew "docker", link: false
 brew "docker-compose", link: false
 cask "dropbox"
-cask "emacs"
+cask "docker"
 cask "firefox"
 cask "flux"
 cask "grammarly"
