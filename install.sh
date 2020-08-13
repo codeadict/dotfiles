@@ -67,6 +67,9 @@ info "Starting Homebrew cleanup..."
 brew cask cleanup
 brew cleanup
 
+echo "Setuping up MacOS..."
+osx_config.sh
+
 # Install and use ZSH
 ZSH=/usr/local/bin/zsh
 if grep -vFxq $ZSH /etc/shells
