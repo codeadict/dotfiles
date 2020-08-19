@@ -107,6 +107,7 @@
 * :link: [The Relationship Between Hours Worked and Productivity](http://cs.stanford.edu/people/eroberts/cs201/projects/crunchmode/econ-hours-productivity.html)- in short work less, rest, sleep, have fun.
 * :link: [Minimalism — An undervalued development skill](https://volument.com/blog/minimalism-the-most-undervalued-development-skill)
 * :link: [Programming Sucks](https://www.stilldrinking.org/programming-sucks)
+* :link: [Solo Developer Habits](https://www.3jane.co.uk/posts/solo-developer-habits/)
 
 ## Math
 
