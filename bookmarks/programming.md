@@ -40,6 +40,7 @@
 * :link: [Debugging techniques in Elixir](http://blog.plataformatec.com.br/2016/04/debugging-techniques-in-elixir-lang/)
 * :link: [Elixircards | Flashcards to help you master Elixir](https://elixircards.co.uk/)
 * :link: [Ecto Tips: UUID Boilerplate, Docs, and Composing Changesets](https://bernheisel.com/blog/ecto_changeset_tips/)
+* :link: [Elixir's modularity toolbox](https://medium.com/@lakret/elixirs-modularity-toolbox-398906988a60#37af)
 * :link: [Avoid these OTP Supervision performance pitfalls](https://moosecode.nl/blog/avoid_these_otp_supervision_performance_pitfalls)
 * :link: [Getting Started with Erlang: User's Guide](http://erlang.org/doc/getting_started/users_guide.html)
 * :link: [OTP Design Principles User's Guide](http://erlang.org/doc/design_principles/users_guide.html)
