@@ -55,6 +55,9 @@ cd $DOTFILES
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle
 
+echo "Setuping up MacOS..."
+osx_config.sh
+
 # Symlink dotfiles
 rcup -v rcrc
 rcup -v
@@ -62,9 +65,6 @@ rcup -v
 # Install ASDF version manager
 cd "$HOME"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-
-echo "Setuping up MacOS..."
-osx_config.sh
 
 # Install and use ZSH
 ZSH=/usr/local/bin/zsh
