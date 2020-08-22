@@ -67,13 +67,12 @@ cd "$HOME"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 # Install and use ZSH
-ZSH=/usr/local/bin/zsh
+ZSH=/bin/zsh
 if grep -vFxq $ZSH /etc/shells
 then
   info "Adding $ZSH to /etc/shells"
   echo $ZSH | sudo tee -a /etc/shells
 fi
-sudo chmod -R 755 /usr/local/share/zsh
 chsh -s $ZSH
 env zsh
 # shellcheck source=./zshrc
