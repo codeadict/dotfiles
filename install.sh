@@ -63,10 +63,6 @@ rcup -v
 cd "$HOME"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
-info "Starting Homebrew cleanup..."
-brew cask cleanup
-brew cleanup
-
 echo "Setuping up MacOS..."
 osx_config.sh
 
@@ -82,6 +78,9 @@ chsh -s $ZSH
 env zsh
 # shellcheck source=./zshrc
 . ~/.zshrc
+
+info "Starting Homebrew cleanup..."
+brew cleanup
 
 info "Generating an SSH key for Git..."
 ssh-keygen -t rsa
