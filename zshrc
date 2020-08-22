@@ -95,7 +95,7 @@ function __git_prompt {
   if __find_git_root; then
     local dirty_str=''
     if __git_dirty; then
-      dirty_str='●'
+      dirty_str='*'
     fi
 
     print "%{$__PROMPT_VCS_DIRTY_COLOR%}${dirty_str}%{$reset_color%}"\
