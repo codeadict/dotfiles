@@ -55,8 +55,8 @@ cd $DOTFILES
 # Install all our dependencies with bundle (See Brewfile)
 brew bundle
 
-echo "Setuping up MacOS..."
-sh osx_config.sh
+#echo "Setuping up MacOS..."
+#sh osx_config.sh
 
 # Symlink dotfiles
 rcup -v rcrc
