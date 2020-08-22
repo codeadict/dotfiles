@@ -95,7 +95,7 @@ function __git_prompt {
   if __find_git_root; then
     local dirty_str=''
     if __git_dirty; then
-      dirty_str='●'
+      dirty_str='*'
     fi
 
     print "%{$__PROMPT_VCS_DIRTY_COLOR%}${dirty_str}%{$reset_color%}"\
@@ -120,6 +120,6 @@ PROMPT=\
 '${__PROMPT_EXIT_CODE}$(__git_prompt)'\
 "%{$__PROMPT_DELIMITER_COLOR%}"'${__PROMPT_BG}'\
 "%{$__PROMPT_PWD_COLOR%}"'$(__abbrev_pwd)'"%{$reset_color%}
-%{$__PROMPT_DELIMITER_COLOR%}%#%{$reset_color%} "
+%{$__PROMPT_DELIMITER_COLOR%}%#>{$reset_color%} "
 
 source $HOME/.asdf/completions/asdf.bash
