@@ -1,6 +1,7 @@
 # Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
@@ -50,7 +51,6 @@ brew "ripgrep"
 brew "s3cmd"
 brew "shellcheck"
 brew "ssh-copy-id", link: true
-brew "valgrind"
 brew "tmux"
 brew "tree"
 brew "watch"

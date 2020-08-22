@@ -29,8 +29,8 @@ fi
 
 info "Starting the Mac install ..."
 
-info "Setting up X-Code..."
-xcode-select --install
+#info "Setting up X-Code..."
+# xcode-select --install
 
 # Check for Homebrew and install if not present
 if ! command -v brew >/dev/null; then
