@@ -73,7 +73,7 @@ then
   info "Adding $ZSH to /etc/shells"
   echo $ZSH | sudo tee -a /etc/shells
 fi
-chsh -s $ZSH
+# chsh -s $ZSH
 env zsh
 # shellcheck source=./zshrc
 . ~/.zshrc
