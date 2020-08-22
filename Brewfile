@@ -94,7 +94,7 @@ cask "font-source-code-pro-for-powerline"
 cask "font-source-code-pro"
 
 # App Store apps
-=begin mas "Xcode", id: 497799835
-mas "The Unarchiver", id: 425424353
-mas "Medis", id: 1063631769
-mas "Grammarly for Safari", id: 1462114288 =end
+#mas "Xcode", id: 497799835
+#mas "The Unarchiver", id: 425424353
+#mas "Medis", id: 1063631769
+#mas "Grammarly for Safari", id: 1462114288
