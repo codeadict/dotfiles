@@ -24,7 +24,7 @@ brew "ctags"
 brew "curl"
 brew "direnv"
 brew "editorconfig"
-brew "emacs-plus@28", args: ["with-jansson", "with-dbus"]
+brew "emacs-plus@27", args: ["with-jansson", "with-dbus"]
 brew "fd"
 brew "findutils"
 brew "git"
@@ -94,7 +94,7 @@ cask "font-source-code-pro-for-powerline"
 cask "font-source-code-pro"
 
 # App Store apps
-mas "Xcode", id: 497799835
+=begin mas "Xcode", id: 497799835
 mas "The Unarchiver", id: 425424353
 mas "Medis", id: 1063631769
-mas "Grammarly for Safari", id: 1462114288
+mas "Grammarly for Safari", id: 1462114288 =end
