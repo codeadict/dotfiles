@@ -120,6 +120,6 @@ PROMPT=\
 '${__PROMPT_EXIT_CODE}$(__git_prompt)'\
 "%{$__PROMPT_DELIMITER_COLOR%}"'${__PROMPT_BG}'\
 "%{$__PROMPT_PWD_COLOR%}"'$(__abbrev_pwd)'"%{$reset_color%}
-%{$__PROMPT_DELIMITER_COLOR%}%#>{$reset_color%} "
+%{$__PROMPT_DELIMITER_COLOR%}%#%{$reset_color%} "
 
 source $HOME/.asdf/completions/asdf.bash
