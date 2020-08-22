@@ -56,7 +56,7 @@ cd $DOTFILES
 brew bundle
 
 echo "Setuping up MacOS..."
-sh $DOTFILES/osx_config.sh
+sh osx_config.sh
 
 # Symlink dotfiles
 rcup -v rcrc
