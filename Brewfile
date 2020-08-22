@@ -51,6 +51,7 @@ brew "ripgrep"
 brew "s3cmd"
 brew "shellcheck"
 brew "ssh-copy-id", link: true
+brew "svn"
 brew "tmux"
 brew "tree"
 brew "watch"
