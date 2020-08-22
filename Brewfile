@@ -13,6 +13,7 @@ tap "d12frosted/emacs-plus"
 # Bins
 brew "aspell"
 brew "awscli"
+brew "autojump"
 brew "bash" # Latest Bash version
 brew "bash-completion"
 brew "ccat"
