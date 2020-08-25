@@ -1,4 +1,4 @@
-source ~/.dotfiles/zsh/antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle autojump
 antigen bundle zsh-users/zsh-syntax-highlighting

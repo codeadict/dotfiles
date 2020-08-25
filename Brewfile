@@ -11,9 +11,10 @@ tap 'thoughtbot/formulae'
 tap "d12frosted/emacs-plus"
 
 # Bins
+brew "antigen"
 brew "aspell"
-brew "awscli"
 brew "autojump"
+brew "awscli"
 brew "bash" # Latest Bash version
 brew "bash-completion"
 brew "ccat"
