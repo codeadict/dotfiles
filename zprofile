@@ -18,5 +18,8 @@ export CPPFLAGS="$CPPFLAGS -I/usr/local/opt/openssl@1.1/include"
 # For pkg-config to find openssl@1.1:
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 
+# User bins
+export PATH=~/.bin/:$PATH
+
 # ASDF version manager
 source $HOME/.asdf/asdf.sh
