@@ -23,7 +23,7 @@ source ~/.dotfiles/env
 bindkey '\C-p' history-beginning-search-backward
 bindkey '\C-n' history-beginning-search-forward
 bindkey '\e[A' history-beginning-search-backward
-bindkey '\e[B' history-beginning-search-forward 
+bindkey '\e[B' history-beginning-search-forward
 
 # history
 setopt histignoredups
