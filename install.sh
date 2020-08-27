@@ -66,6 +66,23 @@ rcup -v
 cd "$HOME"
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
+info "Installing asdf plugins"
+. ~/.asdf/asdf.sh
+asdf plugin-add erlang
+asdf plugin-add elixir
+asdf plugin-add nodejs
+asdf plugin-add golang
+
+info "Installing languages via asdf..."
+info "Installing NodeJS..."
+bash -c $HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring
+asdf install nodejs latest && asdf global nodejs $(asdf latest nodejs)
+info "Installing Golang..."
+asdf install golang latest && asdf global golang $(asdf latest golang)
+
+# Install
+
+
 # Install and use ZSH
 ZSH=/bin/zsh
 if grep -vFxq $ZSH /etc/shells
@@ -73,19 +90,14 @@ then
   info "Adding $ZSH to /etc/shells"
   echo $ZSH | sudo tee -a /etc/shells
 fi
-# chsh -s $ZSH
-env zsh
-# shellcheck source=./zshrc
-. ~/.zshrc
 
 info "Starting Homebrew cleanup..."
 brew cleanup
 
-info "Generating an SSH key for Git..."
-ssh-keygen -t rsa
-info "Please add this public key to Github \n"
-info "Paste it on https://github.com/account/ssh \n"
-read -p "Press [Enter] when done..."
+# chsh -s $ZSH
+env zsh
+# shellcheck source=./zshrc
+. ~/.zshrc
 
 success "Completed."
 
