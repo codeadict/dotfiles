@@ -18,6 +18,7 @@ export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
 # Aliases
 # ---------
 
+alias preview='open -a Preview'
 # Colored ls output
 alias ls='ls -G'
 # Colored cat meow
