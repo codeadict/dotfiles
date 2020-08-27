@@ -74,11 +74,11 @@ asdf plugin-add nodejs
 asdf plugin-add golang
 
 info "Installing languages via asdf..."
-info "Installing NodeJS..."
+info "Installing latest NodeJS..."
 bash -c $HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs latest && asdf global nodejs $(asdf latest nodejs)
-info "Installing Golang..."
-asdf install golang latest && asdf global golang $(asdf latest golang)
+info "Installing Golang 1.14..."
+asdf install golang latest && asdf global golang 1.14
 
 # Install
 
