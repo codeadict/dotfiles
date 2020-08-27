@@ -1,2 +1,1 @@
 EXCLUDES='README.md Brewfile install.sh rcrc env'
-SYMLINK_DIRS='vim zsh'
