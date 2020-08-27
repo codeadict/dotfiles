@@ -78,7 +78,7 @@ brew "zlib"
 
 # Apps
 cask "1password"
-cask "dash"
+# cask "dash"
 brew "docker", link: false
 brew "docker-compose", link: false
 cask "dropbox"
