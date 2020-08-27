@@ -2,6 +2,7 @@ alefragnani.project-manager
 alexcvzz.vscode-sqlite
 amirHA.better-comments-2
 benvp.vscode-hex-pm-intellisense
+bierner.markdown-emoji
 bierner.markdown-preview-github-styles
 codezombiech.gitignore
 DavidAnson.vscode-markdownlint
@@ -12,10 +13,13 @@ EditorConfig.EditorConfig
 erlang-ls.erlang-ls
 esbenp.prettier-vscode
 florinpatrascu.vscode-elixir-snippets
+formulahendry.auto-close-tag
+formulahendry.auto-rename-tag
 geyao.html-snippets
 golang.go
 hashicorp.terraform
 JakeBecker.elixir-ls
+jebbs.plantuml
 jtavin.ldif
 kkalita.dark-plus-elixir
 lonefy.vscode-JS-CSS-HTML-formatter
@@ -29,6 +33,7 @@ searKing.preview-vscode
 sharat.vscode-brewfile
 stefanjarina.vscode-eex-snippets
 stkb.rewrap
+streetsidesoftware.code-spell-checker
 szTheory.erlang-formatter
 szTheory.hex-lens
 timonwong.shellcheck
