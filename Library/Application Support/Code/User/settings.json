@@ -1,0 +1,72 @@
+{
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "Dracula Soft",
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.parameterHints.cycle": true,
+  "editor.renderControlCharacters": true,
+  "files.trimTrailingWhitespace": true,
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "editor.wordWrapColumn": 100,
+  "[json]": {
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+  },
+  "elixirLS.fetchDeps": false,
+  "[HTML (EEx)]": {},
+  "files.associations": {
+    "*.js": "javascript",
+    "*.ex": "elixir",
+    "*.exs": "elixir",
+    "*.eex": "HTML (EEx)",
+    "*.leex": "HTML (EEx)",
+    "*.html.EEx": "HTML (EEx)"
+  },
+  "beautify.language": {
+    "js": [],
+    "css": [],
+    "html": ["HTML (EEx)"]
+  },
+  "emmet.includeLanguages": {
+    "HTML (EEx)": "html"
+  },
+  "terminal.integrated.fontSize": 14,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "explorer.confirmDragAndDrop": false,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "html",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML",
+    "HTML (Eex)",
+    "HTML (EEx)",
+    "HTML (Twig)",
+    "twig",
+    "Twig",
+    "Nunjucks",
+    "njk",
+    "nunjucks"
+  ],
+  "editor.fontFamily": "Fira Code Retina, Monaco, 'Courier New', monospacenew",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontFamily": "monospace",
+  "go.formatTool": "goimports",
+  "erlang_ls.serverPath": "/Users/codeadict/erlang_ls/_build/default/bin/erlang_ls"
+}
