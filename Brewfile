@@ -28,7 +28,6 @@ brew "ctags"
 brew "curl"
 brew "diff-so-fancy"
 brew "direnv"
-brew "docker"
 brew "editorconfig"
 brew "emacs-plus@27", args: ["with-jansson", "with-dbus"]
 brew "fd"
@@ -79,6 +78,7 @@ brew "zlib"
 
 # Apps
 cask "1password"
+cask "dash"
 brew "docker", link: false
 brew "docker-compose", link: false
 cask "dropbox"
