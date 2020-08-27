@@ -1,4 +1,5 @@
 KERL_BUILD_DOCS=yes
 KERL_INSTALL_MANPAGES=yes
+KERL_INSTALL_HTMLDOCS=yes
 KERL_DEFAULT_INSTALL_DIR=${KERL_BASE_DIR}/installs
-KERL_CONFIGURE_OPTIONS="--disable-hipe --without-javac --with-wx-config=/usr/local/bin/wx-config"
+KERL_CONFIGURE_OPTIONS="--disable-hipe --enable-smp-support --enable-darwin-64bit --with-ssl=/usr/local/opt/openssl@1.1 --without-javac"
