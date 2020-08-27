@@ -73,15 +73,21 @@ asdf plugin-add elixir
 asdf plugin-add nodejs
 asdf plugin-add golang
 
+# Install programming langs
+# TODO: Specify versions in a better way
 info "Installing languages via asdf..."
 info "Installing latest NodeJS..."
 bash -c $HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs latest && asdf global nodejs $(asdf latest nodejs)
 info "Installing Golang 1.14..."
-asdf install golang latest && asdf global golang 1.14
-
-# Install
-
+asdf install golang 1.14 && asdf global golang 1.14
+# Beam install
+info "Installing Erlang 22.3.1 ..."
+asdf install erlang 22.3.1 && asdf global erlang 22.3.1
+info "Installing rebar3"
+curl -fsSL -o $HOME/.bin/rebar3 https://s3.amazonaws.com/rebar3/rebar3
+info "Installing Elixir 1.10.4-otp-22 ..."
+asdf install elixir 1.10.4-otp-22 && asdf global elixir 1.10.4-otp-22
 
 # Install and use ZSH
 ZSH=/bin/zsh
