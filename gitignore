@@ -244,10 +244,9 @@ flycheck_*.el
 /network-security.data
 
 # VSCode
-.vs_code/
-.vscode
-.vs_code/**
+.vscode/
 erlang_ls.config
 
 # Elixir stuff
 .elixir_ls
+.mix_tasks
