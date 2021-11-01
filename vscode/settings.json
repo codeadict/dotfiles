@@ -1,47 +1,116 @@
 {
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.quickSuggestions": false,
-      "editor.rulers": [],
-      "editor.wordWrap": "bounded",
-      "editor.wordWrapColumn": 80
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "css.lint.unknownAtRules": "ignore",
-    "diffEditor.ignoreTrimWhitespace": true,
-    "diffEditor.renderSideBySide": true,
-    "editor.formatOnPaste": true,
-    "editor.minimap.enabled": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.renderIndentGuides": false,
-    "editor.renderWhitespace": "none",
-    "editor.rulers": [
-      100
-    ],
-    "files.insertFinalNewline": true,
+  "telemetry.enableTelemetry": false,
+  "workbench.colorTheme": "Dracula Soft",
+  "files.autoSave": "onFocusChange",
+  "editor.fontLigatures": true,
+  "disableLigatures.mode": "Cursor",
+  "editor.tabSize": 2,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.parameterHints.cycle": true,
+  "editor.renderControlCharacters": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.resolveGlobalModules": true,
+  "files.associations": {
+    "*.js": "javascript",
+    "*.ex": "elixir",
+    "*.exs": "elixir",
+    "*.eex": "html-eex",
+    "*.leex": "html-eex"
+  },
+  "[html-eex]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "html-eex": "html"
+  },
+  "editor.lineHeight": 30,
+  "editor.letterSpacing": 0,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "explorer.confirmDragAndDrop": false,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "html",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML",
+    "html-eex",
+    "twig",
+    "Twig",
+    "Nunjucks",
+    "njk",
+    "nunjucks"
+  ],
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Fira Code, Iosevka, Monaco, 'Courier New', monospacenew",
+  "erlang_ls.serverPath": "/home/codeadict/erlang_ls/_build/default/bin/erlang_ls",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.cursorStyle": "line",
+  "python.linting.enabled": false,
+  "python.linting.pycodestyleEnabled": true,
+  "terminal.integrated.inheritEnv": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "smooth",
+  "git.enableCommitSigning": true,
+  "prettier.prettierPath": "/home/codeadict/.asdf/shims/prettier",
+  "cSpell.enableFiletypes": ["elixir", "html-eex"],
+  "[elixir]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.wordBasedSuggestions": false,
+    "editor.formatOnType": false,
+    "editor.trimAutoWhitespace": false,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls",
     "files.trimTrailingWhitespace": true,
-    "telemetry.enableTelemetry": false,
-    "window.newWindowDimensions": "inherit",
-    "window.restoreWindows": "one",
-    "window.zoomLevel": 0,
-    "workbench.settings.editor": "ui",
-    "workbench.tree.renderIndentGuides": "none"
-  }
-  
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true
+  },
+  "elixirLS.trace.server": "messages",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.minimap.enabled": false,
+  "diffEditor.codeLens": true,
+  "elixirLS.fetchDeps": false,
+  "javascript.referencesCodeLens.enabled": true,
+  "sqltools.codelensLanguages": ["sql"],
+  "elixirLS.enableTestLenses": true,
+  "[sql]": {
+    "editor.defaultFormatter": "AdamRybak.graycat-sql-formatter"
+  },
+  "redhat.telemetry.enabled": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "diffEditor.renderSideBySide": false,
+  "zenMode.fullScreen": false,
+  "workbench.editor.showTabs": false,
+  "window.title": "${activeEditorMedium}${separator}${rootName} ${dirty}",
+  "explorer.openEditors.visible": 0,
+  "workbench.sideBar.location": "right",
+  "workbench.fontAliasing": "antialiased",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "window.zoomLevel": 1
+}
