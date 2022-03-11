@@ -24,11 +24,12 @@
   add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
   snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
   reset-authors = commit --amend --reset-author -CHEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
   whitespace = warn
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  editor = emacs -nw
 [merge]
   ; ff = only
   summary = true
@@ -46,12 +47,20 @@
   autosetuprebase = always
 [help]
   autocorrect = 10
+[pager]
+  diff = delta
+  show = delta
+  log = delta
+  blame = delta
+  reflog = delta
 [interactive]
+[interactive]
+  diffFilter = delta --color-only
   singlekey = true
 [diff]
   algorithm = patience
 [user]
   name = Dairon Medina Caro
-	email = codeadict@users.noreply.github.com
+  email = codeadict@users.noreply.github.com
 [github]
   user = codeadict
