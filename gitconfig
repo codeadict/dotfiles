@@ -2,6 +2,8 @@
   default = tracking
 [color]
   ui = true
+[gui]
+  editor = emacs
 [alias]
   aa = add --all
   ap = add --patch
