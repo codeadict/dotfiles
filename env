@@ -11,8 +11,8 @@ export GREP_COLOR="1;31"
 # Case-Insensitive matches in autojump
 export AUTOJUMP_IGNORE_CASE=1
 
-# Erlang/Elixir shell history
-export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+# Erlang/Elixir: Unicode support, shell history, and turn out experimental features like the maybe expression
+export ERL_AFLAGS="+pc unicode -kernel shell_history enabled -enable-feature all"
 
 # ---------
 # Aliases
