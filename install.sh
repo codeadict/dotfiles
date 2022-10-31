@@ -35,7 +35,7 @@ info "Starting the Mac install ..."
 # Check for Homebrew and install if not present
 if ! command -v brew >/dev/null; then
     info "Installing Homebrew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew tap homebrew/bundle
     info "Updating Homebrew formulaes..."
     brew update
